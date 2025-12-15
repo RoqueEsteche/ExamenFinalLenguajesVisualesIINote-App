@@ -40,7 +40,6 @@ Estructura relevante
 - `src/` componentes y lógica de app
 - `db.json` datos simulados para `json-server`
 
-Si quieres, puedo también: subir el proyecto a GitHub, añadir tests o convertirlo a TypeScript.
 
 Características adicionales
 - Filtros dinámicos: selector de periodo (últimos 7/30/90 días) y filtro de importantes.
