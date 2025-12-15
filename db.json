@@ -1,0 +1,32 @@
+{
+  "notes": [
+    {
+      "title": "Comprar leche",
+      "content": "Recordar comprar leche y huevos",
+      "important": true,
+      "createdAt": "2025-12-01T09:00:00.000Z",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "title": "Proyecto React",
+      "content": "Preparar demo y README para entrega",
+      "important": false,
+      "createdAt": "2025-12-05T14:30:00.000Z"
+    },
+    {
+      "title": "Examen de Lenguajes Visuales",
+      "content": "App de notas\nrápidas\nCRUD de notas con título y contenido; marcar\nimportantes; búsqueda por texto; guardar estado en JSON",
+      "important": false,
+      "createdAt": "2025-12-15T17:45:54.769Z",
+      "id": 3
+    },
+    {
+      "title": "Tirar la Basura",
+      "content": "SAcar las bolas",
+      "important": false,
+      "createdAt": "2025-12-15T17:46:18.983Z",
+      "id": 4
+    }
+  ]
+}

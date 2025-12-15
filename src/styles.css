@@ -1,0 +1,90 @@
+body { background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 60%); }
+.container { max-width: 1100px; }
+.app-hero {
+  background: linear-gradient(90deg, rgba(99,102,241,0.08), rgba(16,185,129,0.04));
+  border-radius: 12px;
+  padding: 1.2rem 1.4rem;
+  margin-bottom: 1rem;
+}
+.note-card { cursor: default; transition: transform .12s ease, box-shadow .12s ease; }
+.note-card:hover { transform: translateY(-4px); box-shadow: 0 8px 20px rgba(16,24,40,0.06); }
+.note-important { border-left: 4px solid #ffc107; }
+.form-error, .invalid-feedback { color: #dc3545; font-size: 0.9rem; }
+.note-badge { font-size: 0.75rem; }
+.note-content { white-space: pre-wrap; }
+.card-small { padding: 1rem; }
+@media (max-width: 576px) {
+  .d-desktop-only { display: none !important; }
+  .note-item-title { font-size: 1rem; }
+}
+
+:root{
+  --bg: #ffffff;
+  --muted: #6c757d;
+  --primary: #0069ff;
+  --card: #ffffff;
+  --text: #0f172a;
+}
+
+[data-theme='dark']{
+  --bg: #0b1220;
+  --muted: #9aa4b2;
+  --primary: #60a5fa;
+  --card: #0f172a;
+  --text: #e6eef8;
+}
+
+body{ background: linear-gradient(180deg,var(--bg) 0%, #061225 100%); color: var(--text); }
+.card{ background: var(--card); }
+.text-muted{ color: var(--muted) !important; }
+.btn-primary{ background: linear-gradient(90deg,var(--primary), #10b981); border: none; }
+
+/* Dark-mode fixes: ensure headings and key UI elements have sufficient contrast */
+[data-theme='dark'] .navbar-brand,
+[data-theme='dark'] h1,
+[data-theme='dark'] h2,
+[data-theme='dark'] h3,
+[data-theme='dark'] h4,
+[data-theme='dark'] h5,
+[data-theme='dark'] h6,
+[data-theme='dark'] .modal-title,
+[data-theme='dark'] .note-item-title {
+  color: var(--text) !important;
+}
+
+[data-theme='dark'] .app-hero {
+  background: linear-gradient(90deg, rgba(96,165,250,0.06), rgba(16,185,129,0.03));
+}
+
+[data-theme='dark'] .card-small,
+[data-theme='dark'] .card,
+[data-theme='dark'] .note-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.00));
+}
+
+[data-theme='dark'] h5,
+[data-theme='dark'] .note-item-title,
+[data-theme='dark'] .navbar-brand,
+[data-theme='dark'] .modal-title {
+  color: var(--text) !important;
+  font-weight: 600;
+}
+
+/* make warning badge clearer in dark */
+[data-theme='dark'] .badge.bg-warning {
+  background-color: #f59e0b;
+  color: #0b1220;
+}
+
+.note-card { overflow: hidden; }
+.note-card .align-items-end { min-width: 120px; }
+
+@media (max-width: 576px) {
+  .note-card .align-items-end { min-width: auto; width: auto; }
+}
+
+[data-theme='dark'] .btn-outline-secondary,
+[data-theme='dark'] .btn-outline-primary {
+  color: var(--text);
+  border-color: rgba(255,255,255,0.08);
+}
